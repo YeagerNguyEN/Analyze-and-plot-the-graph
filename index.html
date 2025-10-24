@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeager - Khảo sát và Vẽ đồ thị Hàm số</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Yeager - Khảo sát và Vẽ đồ thị Hàm số</h1>
+        <p>Nhập hàm số của bạn theo biến 'x'</p>
+      </header>
+
+      <main>
+        <div class="input-section">
+          <span class="function-label">y =</span>
+          <input
+            type="text"
+            id="functionInput"
+            placeholder="Ví dụ: x^3 - 3*x + 2"
+            value="x^3 - 3*x"
+          />
+          <button id="surveyBtn">Khảo sát</button>
+        </div>
+
+        <div class="content-wrapper">
+          <div id="results" class="results-section"></div>
+
+          <div class="canvas-container">
+            <canvas id="graphCanvas" width="600" height="600"></canvas>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          Lưu ý: Nghiệm và cực trị được tìm bằng phương pháp số, có thể có sai
+          số nhỏ. Các hàm phức tạp có thể không được hỗ trợ đầy đủ.
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
